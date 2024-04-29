@@ -12,7 +12,7 @@ FairDeFace consists of three sections:
 1- Face Obfuscation:
 inputs: datasets
 output: obfuscated datasets
-You can access the datasets through this link: https://drive.google.com/drive/folders/1vUkg2rBfg7-Ff0QWwyGf3aFhUbaLWNLJ?usp=sharing
+You can access the datasets through this link: [https://drive.google.com/drive/folders/1vUkg2rBfg7-Ff0QWwyGf3aFhUbaLWNLJ?usp=sharing](https://drive.google.com/drive/folders/1z9vHJRBny8isg7wmA5w4KufM6VeBRJj0?usp=drive_link)
 
 
 Inside the datasets directory are multiple zip files containing the original and obfuscated datasets. Every dataset needed should be unzipped inside the datasets directory. The datasets directory should be in the main project directory. 
