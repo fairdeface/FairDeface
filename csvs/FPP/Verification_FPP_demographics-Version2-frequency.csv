@@ -1,0 +1,31 @@
+
+pairs
+,BFW,,,,,,,,DemogPairs,,,,,
+,black_females,indian_females,white_females,white_males,black_males,indian_males,asian_males,asian_females,Black_Males,Black_Females,White_Females,White_Males,Asian_Males,Asian_Females
+Original,"[[0, 0, 0, 0, 0]]","[[0, 0, 0, 0, 0]]","[[0, 0, 0, 0, 0]]","[[2, 0, 0, 0, 0]]","[[2, 0, 0, 0, 0]]","[[3, 0, 0, 0, 0]]","[[6, 6, 2, 0, 0]]","[[7, 6, 5, 0, 0]]","[[0, 0, 0, 0, 0]]","[[0, 0, 0, 0, 0]]","[[1, 0, 0, 0, 0]]","[[2, 0, 0, 0, 0]]","[[4, 4, 0, 0, 0]]","[[5, 5, 4, 0, 0]]"
+,indian_females,asian_females,black_females,asian_males,black_males,indian_males,white_males,white_females,Asian_Males,Asian_Females,Black_Females,Black_Males,White_Females,White_Males
+DP1,"[[0, 0, 0, 0, 0]]","[[0, 0, 0, 0, 0]]","[[0, 0, 0, 0, 0]]","[[0, 0, 0, 0, 0]]","[[0, 0, 0, 0, 0]]","[[1, 0, 0, 0, 0]]","[[3, 0, 0, 0, 0]]","[[3, 0, 0, 0, 0]]","[[0, 0, 0, 0, 0]]","[[0, 0, 0, 0, 0]]","[[2, 0, 0, 0, 0]]","[[3, 2, 0, 0, 0]]","[[4, 3, 2, 0, 0]]","[[5, 5, 3, 2, 0]]"
+,asian_females,asian_males,black_males,black_females,indian_females,indian_males,white_females,white_males,Asian_Females,Asian_Males,Black_Females,Black_Males,White_Females,White_Males
+DP2,"[[0, 0, 0, 0, 0]]","[[0, 0, 0, 0, 0]]","[[0, 0, 0, 0, 0]]","[[0, 0, 0, 0, 0]]","[[0, 0, 0, 0, 0]]","[[4, 0, 0, 0, 0]]","[[5, 0, 0, 0, 0]]","[[6, 1, 0, 0, 0]]","[[0, 0, 0, 0, 0]]","[[0, 0, 0, 0, 0]]","[[1, 0, 0, 0, 0]]","[[2, 0, 0, 0, 0]]","[[4, 3, 0, 0, 0]]","[[5, 5, 5, 3, 0]]"
+,asian_males,black_males,asian_females,indian_males,white_males,black_females,indian_females,white_females,Asian_Males,Black_Males,Asian_Females,White_Males,Black_Females,White_Females
+CIAGAN,"[[0, 0, 0, 0, 0]]","[[0, 0, 0, 0, 0]]","[[1, 0, 0, 0, 0]]","[[3, 2, 0, 0, 0]]","[[3, 2, 0, 0, 0]]","[[5, 5, 5, 3, 0]]","[[6, 6, 6, 6, 5]]","[[7, 7, 7, 7, 7]]","[[0, 0, 0, 0, 0]]","[[0, 0, 0, 0, 0]]","[[2, 0, 0, 0, 0]]","[[3, 2, 0, 0, 0]]","[[4, 4, 4, 3, 0]]","[[5, 5, 5, 5, 5]]"
+race
+,BFW,,,,DemogPairs,,
+,black,white,indian,asian,Black,White,Asian
+Original,"[[0, 0, 0, 0, 0]]","[[0, 0, 0, 0, 0]]","[[0, 0, 0, 0, 0]]","[[3, 3, 3, 0, 0]]","[[0, 0, 0, 0, 0]]","[[1, 0, 0, 0, 0]]","[[2, 2, 1, 0, 0]]"
+,asian,indian,black,white,Asian,Black,White
+DP1,"[[0, 0, 0, 0, 0]]","[[0, 0, 0, 0, 0]]","[[0, 0, 0, 0, 0]]","[[2, 0, 0, 0, 0]]","[[0, 0, 0, 0, 0]]","[[1, 1, 0, 0, 0]]","[[2, 2, 1, 0, 0]]"
+,asian,black,indian,white,Asian,Black,White
+DP2,"[[0, 0, 0, 0, 0]]","[[0, 0, 0, 0, 0]]","[[1, 0, 0, 0, 0]]","[[3, 0, 0, 0, 0]]","[[0, 0, 0, 0, 0]]","[[1, 0, 0, 0, 0]]","[[2, 2, 2, 0, 0]]"
+,asian,black,indian,white,Asian,Black,White
+CIAGAN,"[[0, 0, 0, 0, 0]]","[[1, 1, 0, 0, 0]]","[[2, 2, 2, 1, 0]]","[[3, 3, 3, 2, 2]]","[[0, 0, 0, 0, 0]]","[[1, 1, 0, 0, 0]]","[[2, 2, 2, 2, 2]]"
+gender
+,DemogPairs,,BFW,
+,Males,Females,Females,Males
+Original,"[[0, 0, 0, 0, 0]]","[[0, 0, 0, 0, 0]]","[[0, 0, 0, 0, 0]]","[[0, 0, 0, 0, 0]]"
+,Females,Males,Females,Males
+DP1,"[[0, 0, 0, 0, 0]]","[[1, 0, 0, 0, 0]]","[[0, 0, 0, 0, 0]]","[[0, 0, 0, 0, 0]]"
+,Females,Males,Females,Males
+DP2,"[[0, 0, 0, 0, 0]]","[[1, 0, 0, 0, 0]]","[[0, 0, 0, 0, 0]]","[[0, 0, 0, 0, 0]]"
+,Males,Females,Males,Females
+CIAGAN,"[[0, 0, 0, 0, 0]]","[[1, 1, 1, 1, 1]]","[[0, 0, 0, 0, 0]]","[[1, 1, 1, 1, 1]]"
