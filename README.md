@@ -9,8 +9,7 @@ FairDeFace is a framework designed to evaluate face obfuscation methods with a f
 1. **Face Obfuscation**
 2. **Quality Analysis: Face Detection**
 3. **Privacy Analysis: Verification and Identification**
-4. **Utility Analysis**
-5. **Attribute Analysis**
+4. **Attribute Analysis**
 
 ---
 
@@ -171,12 +170,9 @@ python Verification_results.py --file_path Identification_Scores_Pixelation_0000
 
 ---
 
-## 4. Utility Analysis
-To be added in future updates.
 
----
 
-## 5. Attribute Analysis
+## 4. Attribute Analysis
 
 ### Collect Attributes
 ```bash
