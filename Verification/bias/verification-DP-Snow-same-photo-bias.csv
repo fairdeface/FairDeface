@@ -1,0 +1,29 @@
+"epsilons=[0.02, 0.05, 0.1, 0.15, 0.2]"
+DP-Snow
+""
+pairs
+,BFW,,,,,,,,,DemogPairs,,,,,,
+,asian_females,black_males,white_females,white_males,indian_males,asian_males,indian_females,black_females,Asian_Females,White_Females,Black_Males,White_Males,Asian_Males,Black_Females
+ArcFace,"[0, 0, 0, 0, 0]","[14, 14, 14, 0, 0]","[29, 14, 14, 0, 0]","[43, 29, 14, 14, 0]","[43, 29, 14, 14, 0]","[71, 43, 14, 14, 0]","[86, 71, 43, 14, 14]","[100, 100, 86, 43, 14]","[0, 0, 0, 0, 0]","[20, 20, 0, 0, 0]","[40, 40, 40, 0, 0]","[60, 40, 40, 20, 0]","[80, 80, 40, 40, 20]","[100, 100, 80, 40, 40]"
+
+Dataset Bias
+,BFW,DemogPairs
+ArcFace,"[96, 75, 50, 25, 7]","[100, 93, 67, 33, 20]"
+""
+race
+,BFW,,,,,DemogPairs,,,
+,asian,white,indian,black,White,Asian,Black
+ArcFace,"[0, 0, 0, 0, 0]","[33, 33, 0, 0, 0]","[67, 67, 33, 0, 0]","[100, 67, 33, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[100, 100, 100, 0, 0]"
+
+Dataset Bias
+,BFW,DemogPairs
+ArcFace,"[100, 83, 33, 0, 0]","[67, 67, 67, 0, 0]"
+""
+gender
+,BFW,,,DemogPairs,,
+,Males,Females,Females,Males
+ArcFace,"[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[100, 100, 0, 0, 0]"
+
+Dataset Bias
+,BFW,DemogPairs
+ArcFace,"[0, 0, 0, 0, 0]","[100, 100, 0, 0, 0]"
