@@ -1,10 +1,4 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Oct 21 20:07:fontsize 2023
 
-@author: moosavi
-"""
 import seaborn as sns
 from matplotlib.lines import Line2D
 from matplotlib.colors import BoundaryNorm, ListedColormap
@@ -114,15 +108,14 @@ def bias_measure(detection, obf_method, term):
             row_datasets[-1].append(dataset)
             demos = list(detection[models[0]][dataset].keys())
             demos = sort_demos(detection[models[0]][dataset], 'fail_ratio')
-            for demo in demos:
-                second_row.append(demo)
-                first_row.append("")
+            # print(first_row)
+            first_row.extend([""]*(len(demos)-1))
 
 
 
                     
         writer_object.writerow(first_row)
-        writer_object.writerow(second_row)
+        # writer_object.writerow(second_row)
         bias_eps_demo={}
         bias_eps_dataset={}
      
@@ -134,7 +127,7 @@ def bias_measure(detection, obf_method, term):
             biases = {}
             bias_eps_demo[model]={}
             bias_eps_dataset[model]={}
-
+            demo_rows=[""]
             # datasets = list(detection[model].keys())
             # num_cols= len(datasets)
             # num_rows= int(np.ceil(len(datasets)/2))
@@ -148,6 +141,7 @@ def bias_measure(detection, obf_method, term):
 
                 demos = list(detection[model][dataset].keys())
                 demos = sort_demos(detection[model][dataset], term)
+                demo_rows.extend(demos)
                 num_demos = len(demos)
                 dataset_biass = np.empty((num_demos, num_demos))
                 Demos = []
@@ -159,21 +153,19 @@ def bias_measure(detection, obf_method, term):
                 i = 0
 
                 for demo in demos:
+                    # print(detection[model][dataset][demo][term])
                     biases[dataset][demo] = {}
                     bias_eps_demo[model][dataset][demo]={}
                     for epsilon in epsilons:
                         bias_eps_demo[model][dataset][demo][epsilon]=0
                     for demo2 in demos:
-                        try:
+                        
+                        biases[dataset][demo][demo2] = (
+                            detection[model][dataset][demo][term]-detection[model][dataset][demo2][term])/100
+                        for epsilon in epsilons:
+                            bias_eps_demo[model][dataset][demo][epsilon]+= (biases[dataset][demo][demo2] < -epsilon )
+                            bias_eps_dataset[model][dataset][epsilon]+= (biases[dataset][demo][demo2] < -epsilon)
 
-                            biases[dataset][demo][demo2] = (
-                                100-detection[model][dataset][demo][term])/(100-detection[model][dataset][demo2][term])
-                            for epsilon in epsilons:
-                                bias_eps_demo[model][dataset][demo][epsilon]+= int(biases[dataset][demo][demo2] < (1-epsilon))
-                                bias_eps_dataset[model][dataset][epsilon]+= int(biases[dataset][demo][demo2] < (1-epsilon))
-                        except Exception as e: 
-                            print(e)
-                            
                             # biases[dataset][demo][demo2] = float("NaN")
                             # print('devided by zero', model, dataset, demo2)
 
@@ -189,6 +181,8 @@ def bias_measure(detection, obf_method, term):
                     bias_dataset.append(int(np.round(100*bias_eps_dataset[model][dataset][epsilon])))
            
                 row_datasets[-1].append(bias_dataset)
+            writer_object.writerow(demo_rows) 
+
             writer_object.writerow(row) 
 
         for row in row_datasets:
