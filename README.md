@@ -53,7 +53,7 @@ This creates a folder named `Pixelation` in the `datasets` directory containing 
 
 ---
 
-## 2. Quality Analysis: Face Detection
+## 2. Face Detection
 
 ### Detect Faces
 Run the following command to analyze face detection:
