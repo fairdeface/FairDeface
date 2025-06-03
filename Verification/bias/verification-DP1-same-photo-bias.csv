@@ -1,0 +1,83 @@
+"epsilons=[0.02, 0.05, 0.1, 0.15, 0.2]"
+DP1
+""
+pairs
+,BFW,,,,,,,,,DemogPairs,,,,,,
+,indian_females,black_females,white_females,asian_females,asian_males,indian_males,black_males,white_males,White_Females,Black_Females,Asian_Females,Asian_Males,White_Males,Black_Males
+VGG-Face,"[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[14, 0, 0, 0, 0]","[71, 14, 0, 0, 0]","[86, 71, 0, 0, 0]","[100, 86, 71, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[40, 40, 0, 0, 0]","[40, 40, 0, 0, 0]","[80, 80, 60, 40, 0]","[100, 100, 100, 100, 80]"
+,indian_females,asian_females,black_females,indian_males,white_females,black_males,asian_males,white_males,Black_Females,Asian_Females,White_Females,Asian_Males,Black_Males,White_Males
+Facenet,"[0, 0, 0, 0, 0]","[14, 0, 0, 0, 0]","[14, 14, 0, 0, 0]","[43, 14, 0, 0, 0]","[43, 29, 0, 0, 0]","[43, 29, 0, 0, 0]","[86, 43, 14, 0, 0]","[100, 86, 43, 14, 0]","[0, 0, 0, 0, 0]","[20, 0, 0, 0, 0]","[20, 20, 0, 0, 0]","[40, 20, 0, 0, 0]","[80, 80, 80, 40, 20]","[80, 80, 80, 60, 20]"
+,black_males,asian_males,indian_males,black_females,asian_females,white_males,white_females,indian_females,Black_Males,Asian_Males,White_Males,Black_Females,Asian_Females,White_Females
+OpenFace,"[0, 0, 0, 0, 0]","[14, 0, 0, 0, 0]","[14, 0, 0, 0, 0]","[14, 0, 0, 0, 0]","[43, 14, 0, 0, 0]","[71, 14, 0, 0, 0]","[71, 57, 0, 0, 0]","[86, 71, 14, 0, 0]","[0, 0, 0, 0, 0]","[20, 0, 0, 0, 0]","[40, 20, 0, 0, 0]","[60, 40, 20, 0, 0]","[80, 80, 60, 40, 20]","[80, 80, 80, 60, 20]"
+,black_males,indian_males,black_females,asian_females,asian_males,indian_females,white_males,white_females,Black_Males,Black_Females,Asian_Males,Asian_Females,White_Males,White_Females
+DeepID,"[0, 0, 0, 0, 0]","[14, 14, 0, 0, 0]","[14, 14, 0, 0, 0]","[43, 43, 14, 14, 0]","[43, 43, 14, 14, 0]","[71, 43, 43, 14, 0]","[86, 86, 71, 43, 29]","[100, 100, 86, 86, 57]","[0, 0, 0, 0, 0]","[20, 20, 20, 0, 0]","[40, 20, 20, 20, 0]","[60, 60, 60, 20, 20]","[80, 80, 60, 60, 40]","[100, 80, 80, 60, 60]"
+,asian_females,black_males,indian_females,black_females,asian_males,indian_males,white_females,white_males,Black_Females,Black_Males,Asian_Males,Asian_Females,White_Males,White_Females
+Dlib,"[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[14, 0, 0, 0, 0]","[71, 14, 0, 0, 0]","[71, 57, 0, 0, 0]","[100, 100, 71, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[40, 20, 0, 0, 0]","[60, 60, 40, 20, 0]","[60, 60, 60, 40, 0]","[100, 60, 60, 40, 0]"
+,indian_females,black_females,white_females,asian_females,asian_males,white_males,indian_males,black_males,White_Females,Black_Females,White_Males,Asian_Males,Black_Males,Asian_Females
+ArcFace,"[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[57, 0, 0, 0, 0]","[57, 0, 0, 0, 0]","[57, 14, 0, 0, 0]","[57, 14, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[40, 40, 40, 0, 0]","[60, 40, 40, 0, 0]","[60, 40, 40, 20, 0]","[100, 60, 40, 40, 0]"
+,asian_females,asian_males,indian_females,black_females,black_males,white_females,white_males,indian_males,Black_Males,Black_Females,Asian_Males,Asian_Females,White_Females,White_Males
+DeepFace,"[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[14, 0, 0, 0, 0]","[14, 0, 0, 0, 0]","[57, 0, 0, 0, 0]","[71, 14, 0, 0, 0]","[86, 14, 0, 0, 0]","[0, 0, 0, 0, 0]","[20, 20, 0, 0, 0]","[40, 40, 20, 20, 0]","[40, 40, 20, 20, 0]","[80, 80, 40, 40, 20]","[80, 80, 80, 40, 20]"
+
+Dataset Bias
+,BFW,DemogPairs
+VGG-Face,"[68, 43, 18, 0, 0]","[87, 87, 53, 47, 27]"
+Facenet,"[86, 54, 14, 4, 0]","[80, 67, 53, 33, 13]"
+OpenFace,"[79, 39, 4, 0, 0]","[93, 73, 53, 33, 13]"
+DeepID,"[93, 86, 57, 43, 21]","[100, 87, 80, 53, 40]"
+Dlib,"[64, 43, 18, 0, 0]","[87, 67, 53, 33, 0]"
+ArcFace,"[57, 7, 0, 0, 0]","[87, 60, 53, 20, 0]"
+DeepFace,"[61, 7, 0, 0, 0]","[87, 87, 53, 40, 13]"
+""
+race
+,BFW,,,,,RFW,,,,,DemogPairs,,,
+,asian,indian,black,white,Asian,Indian,Caucasian,African,Asian,White,Black
+VGG-Face,"[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[67, 0, 0, 0, 0]","[100, 33, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[67, 0, 0, 0, 0]","[100, 100, 100, 100, 67]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[100, 100, 0, 0, 0]"
+,indian,black,asian,white,Asian,Indian,Caucasian,African,Asian,Black,White
+Facenet,"[0, 0, 0, 0, 0]","[33, 0, 0, 0, 0]","[33, 0, 0, 0, 0]","[100, 67, 0, 0, 0]","[0, 0, 0, 0, 0]","[33, 0, 0, 0, 0]","[67, 33, 0, 0, 0]","[100, 100, 100, 33, 0]","[0, 0, 0, 0, 0]","[50, 0, 0, 0, 0]","[100, 50, 0, 0, 0]"
+,black,asian,indian,white,African,Asian,Indian,Caucasian,Black,Asian,White
+OpenFace,"[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[67, 0, 0, 0, 0]","[67, 33, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[67, 0, 0, 0, 0]","[100, 33, 0, 0, 0]","[0, 0, 0, 0, 0]","[50, 50, 0, 0, 0]","[100, 50, 0, 0, 0]"
+,black,indian,asian,white,African,Asian,Indian,Caucasian,Black,Asian,White
+DeepID,"[0, 0, 0, 0, 0]","[33, 33, 0, 0, 0]","[33, 33, 33, 0, 0]","[100, 100, 100, 100, 33]","[0, 0, 0, 0, 0]","[33, 33, 33, 33, 33]","[67, 33, 33, 33, 33]","[100, 100, 67, 33, 33]","[0, 0, 0, 0, 0]","[50, 50, 50, 50, 0]","[100, 100, 100, 100, 50]"
+,asian,black,indian,white,African,Asian,Indian,Caucasian,Black,Asian,White
+Dlib,"[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[33, 0, 0, 0, 0]","[100, 100, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[100, 100, 0, 0, 0]","[0, 0, 0, 0, 0]","[50, 50, 50, 0, 0]","[100, 100, 50, 50, 0]"
+,indian,white,asian,black,Asian,Caucasian,African,Indian,White,Black,Asian
+ArcFace,"[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[67, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[50, 0, 0, 0, 0]","[100, 100, 50, 0, 0]"
+,asian,black,indian,white,African,Asian,Indian,Caucasian,Black,Asian,White
+DeepFace,"[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[33, 0, 0, 0, 0]","[67, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[33, 0, 0, 0, 0]","[67, 67, 67, 0, 0]","[100, 67, 67, 33, 0]","[0, 0, 0, 0, 0]","[50, 50, 0, 0, 0]","[100, 100, 100, 50, 0]"
+
+Dataset Bias
+,BFW,RFW,DemogPairs
+VGG-Face,"[83, 17, 0, 0, 0]","[83, 50, 50, 50, 33]","[67, 67, 0, 0, 0]"
+Facenet,"[83, 33, 0, 0, 0]","[100, 67, 50, 17, 0]","[100, 33, 0, 0, 0]"
+OpenFace,"[67, 17, 0, 0, 0]","[83, 17, 0, 0, 0]","[100, 67, 0, 0, 0]"
+DeepID,"[83, 83, 67, 50, 17]","[100, 83, 67, 50, 50]","[100, 100, 100, 100, 33]"
+Dlib,"[67, 50, 0, 0, 0]","[50, 50, 0, 0, 0]","[100, 100, 67, 33, 0]"
+ArcFace,"[0, 0, 0, 0, 0]","[33, 0, 0, 0, 0]","[100, 67, 33, 0, 0]"
+DeepFace,"[50, 0, 0, 0, 0]","[100, 67, 67, 17, 0]","[100, 100, 67, 33, 0]"
+""
+gender
+,BFW,,,DemogPairs,,,CelebA,,
+,Females,Males,Females,Males,Females,Males
+VGG-Face,"[0, 0, 0, 0, 0]","[100, 100, 0, 0, 0]","[0, 0, 0, 0, 0]","[100, 100, 100, 100, 0]","[0, 0, 0, 0, 0]","[100, 100, 100, 100, 0]"
+,Females,Males,Females,Males,Females,Males
+Facenet,"[0, 0, 0, 0, 0]","[100, 100, 0, 0, 0]","[0, 0, 0, 0, 0]","[100, 100, 100, 0, 0]","[0, 0, 0, 0, 0]","[100, 100, 100, 0, 0]"
+,Males,Females,Males,Females,Males,Females
+OpenFace,"[0, 0, 0, 0, 0]","[100, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[100, 100, 100, 0, 0]","[0, 0, 0, 0, 0]","[100, 100, 100, 100, 100]"
+,Males,Females,Males,Females,Males,Females
+DeepID,"[0, 0, 0, 0, 0]","[100, 100, 0, 0, 0]","[0, 0, 0, 0, 0]","[100, 100, 0, 0, 0]","[0, 0, 0, 0, 0]","[100, 100, 0, 0, 0]"
+,Females,Males,Males,Females,Males,Females
+Dlib,"[0, 0, 0, 0, 0]","[100, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[100, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[100, 100, 100, 0, 0]"
+,Females,Males,Females,Males,Females,Males
+ArcFace,"[0, 0, 0, 0, 0]","[100, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[100, 100, 0, 0, 0]","[0, 0, 0, 0, 0]","[100, 100, 0, 0, 0]"
+,Females,Males,Males,Females,Males,Females
+DeepFace,"[0, 0, 0, 0, 0]","[100, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[100, 0, 0, 0, 0]"
+
+Dataset Bias
+,BFW,DemogPairs,CelebA
+VGG-Face,"[100, 100, 0, 0, 0]","[100, 100, 100, 100, 0]","[100, 100, 100, 100, 0]"
+Facenet,"[100, 100, 0, 0, 0]","[100, 100, 100, 0, 0]","[100, 100, 100, 0, 0]"
+OpenFace,"[100, 0, 0, 0, 0]","[100, 100, 100, 0, 0]","[100, 100, 100, 100, 100]"
+DeepID,"[100, 100, 0, 0, 0]","[100, 100, 0, 0, 0]","[100, 100, 0, 0, 0]"
+Dlib,"[100, 0, 0, 0, 0]","[100, 0, 0, 0, 0]","[100, 100, 100, 0, 0]"
+ArcFace,"[100, 0, 0, 0, 0]","[100, 100, 0, 0, 0]","[100, 100, 0, 0, 0]"
+DeepFace,"[100, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[100, 0, 0, 0, 0]"

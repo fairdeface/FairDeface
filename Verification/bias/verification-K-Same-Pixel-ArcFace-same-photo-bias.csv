@@ -1,0 +1,29 @@
+"epsilons=[0.02, 0.05, 0.1, 0.15, 0.2]"
+K-Same-Pixel-ArcFace
+""
+pairs
+,BFW,,,,,,,,,DemogPairs,,,,,,
+,white_females,white_males,indian_males,asian_males,black_females,asian_females,indian_females,black_males,Asian_Males,Asian_Females,Black_Males,Black_Females,White_Males,White_Females
+ArcFace,"[0, 0, 0, 0, 0]","[14, 14, 14, 0, 0]","[29, 29, 14, 14, 0]","[43, 29, 14, 14, 14]","[57, 43, 29, 14, 14]","[71, 57, 43, 29, 14]","[71, 57, 43, 29, 14]","[100, 71, 57, 29, 14]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[40, 20, 0, 0, 0]","[60, 60, 20, 0, 0]","[80, 80, 80, 60, 60]","[80, 80, 80, 80, 60]"
+
+Dataset Bias
+,BFW,DemogPairs
+ArcFace,"[96, 75, 54, 32, 18]","[87, 80, 60, 47, 40]"
+""
+race
+,BFW,,,,,DemogPairs,,,
+,white,indian,asian,black,Asian,Black,White
+ArcFace,"[0, 0, 0, 0, 0]","[33, 33, 33, 33, 0]","[33, 33, 33, 33, 0]","[100, 33, 33, 33, 33]","[0, 0, 0, 0, 0]","[50, 50, 0, 0, 0]","[100, 100, 100, 100, 50]"
+
+Dataset Bias
+,BFW,DemogPairs
+ArcFace,"[83, 50, 50, 50, 17]","[100, 100, 67, 67, 33]"
+""
+gender
+,BFW,,,DemogPairs,,
+,Females,Males,Females,Males
+ArcFace,"[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]"
+
+Dataset Bias
+,BFW,DemogPairs
+ArcFace,"[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]"
