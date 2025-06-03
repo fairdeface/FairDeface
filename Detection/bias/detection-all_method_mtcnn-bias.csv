@@ -1,0 +1,65 @@
+epsilons=[0.2  0.15 0.1  0.05 0.02]
+,BFW,,,,,,,,DemogPairs,,,,,,RFW,,,,CelebA,
+,black_females,white_females,indian_females,indian_males,asian_males,asian_females,black_males,white_males,White_Females,Black_Males,White_Males,Asian_Females,Black_Females,Asian_Males,African,Asian,Indian,Caucasian,Females,Males
+DP2,"[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]"
+,BFW,,,,,,,,DemogPairs,,,,,
+,indian_females,white_males,white_females,indian_males,black_females,asian_males,asian_females,black_males,White_Males,White_Females,Asian_Males,Black_Females,Black_Males,Asian_Females
+Pixelation,"[0, 29, 71, 71, 86]","[0, 29, 71, 71, 86]","[0, 0, 29, 71, 71]","[0, 0, 0, 29, 43]","[0, 0, 0, 29, 43]","[0, 0, 0, 0, 29]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[60, 80, 80, 80, 100]","[20, 60, 80, 80, 80]","[0, 0, 0, 20, 40]","[0, 0, 0, 0, 20]","[0, 0, 0, 0, 20]","[0, 0, 0, 0, 0]"
+,BFW,,,,,,,,DemogPairs,,,,,
+,indian_females,white_females,white_males,asian_females,black_females,indian_males,asian_males,black_males,White_Females,White_Males,Black_Females,Asian_Females,Asian_Males,Black_Males
+K-Same-Pixel-ArcFace,"[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[60, 80, 80, 80, 100]","[60, 60, 80, 80, 80]","[40, 60, 60, 60, 60]","[40, 40, 40, 40, 40]","[0, 0, 0, 20, 20]","[0, 0, 0, 0, 0]"
+,BFW,,,,,,,,DemogPairs,,,,,,RFW,,,,CelebA,
+,black_females,indian_females,white_females,black_males,asian_females,indian_males,asian_males,white_males,White_Females,Black_Males,White_Males,Asian_Females,Black_Females,Asian_Males,African,Indian,Asian,Caucasian,Females,Males
+Original,"[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]"
+,BFW,,,,,,,,DemogPairs,,,,,
+,black_females,white_females,asian_females,indian_males,indian_females,black_males,asian_males,white_males,Black_Females,Black_Males,Asian_Females,White_Females,White_Males,Asian_Males
+Fawkes-High,"[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]"
+,BFW,,,,,,,,DemogPairs,,,,,,RFW,,,,CelebA,
+,black_males,asian_females,indian_females,white_males,black_females,indian_males,asian_males,white_females,Black_Males,White_Females,White_Males,Asian_Females,Black_Females,Asian_Males,Asian,African,Indian,Caucasian,Females,Males
+CIAGAN,"[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]"
+,BFW,,,,,,,,DemogPairs,,,,,,RFW,,,,CelebA,
+,indian_females,asian_females,white_females,asian_males,black_females,white_males,indian_males,black_males,White_Males,White_Females,Asian_Females,Black_Females,Asian_Males,Black_Males,Indian,Asian,African,Caucasian,Females,Males
+DP1,"[0, 14, 14, 57, 100]","[0, 0, 14, 29, 71]","[0, 0, 14, 29, 71]","[0, 0, 14, 14, 29]","[0, 0, 14, 14, 29]","[0, 0, 0, 14, 29]","[0, 0, 0, 14, 14]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 20]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]"
+,BFW,,,,,,,,DemogPairs,,,,,,RFW,,,,CelebA,
+,black_females,indian_males,white_females,white_males,asian_males,asian_females,indian_females,black_males,White_Females,White_Males,Black_Females,Asian_Males,Asian_Females,Black_Males,Indian,Caucasian,Asian,African,Males,Females
+DP-Snow,"[14, 14, 29, 29, 57]","[14, 14, 29, 29, 57]","[14, 14, 29, 29, 57]","[14, 14, 29, 29, 43]","[14, 14, 29, 29, 29]","[14, 14, 14, 29, 29]","[14, 14, 14, 14, 14]","[0, 0, 0, 0, 0]","[0, 20, 20, 40, 80]","[0, 20, 20, 40, 60]","[0, 0, 20, 20, 40]","[0, 0, 20, 20, 40]","[0, 0, 20, 20, 20]","[0, 0, 0, 0, 0]","[0, 0, 0, 33, 33]","[0, 0, 0, 33, 33]","[0, 0, 0, 0, 33]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]"
+,BFW,,,,,,,,DemogPairs,,,,,,RFW,,,,CelebA,
+
+Dataset Bias
+,BFW,DemogPairs,RFW,CelebA
+DP2,"[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]"
+,BFW,,,,,,,,DemogPairs,,,,,
+
+Dataset Bias
+,BFW,DemogPairs
+Pixelation,"[0, 14, 43, 68, 89]","[27, 47, 53, 60, 87]"
+,BFW,,,,,,,,DemogPairs,,,,,
+
+Dataset Bias
+,BFW,DemogPairs
+K-Same-Pixel-ArcFace,"[0, 0, 0, 0, 0]","[67, 80, 87, 93, 100]"
+,BFW,,,,,,,,DemogPairs,,,,,,RFW,,,,CelebA,
+
+Dataset Bias
+,BFW,DemogPairs,RFW,CelebA
+Original,"[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]"
+,BFW,,,,,,,,DemogPairs,,,,,
+
+Dataset Bias
+,BFW,DemogPairs
+Fawkes-High,"[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]"
+,BFW,,,,,,,,DemogPairs,,,,,,RFW,,,,CelebA,
+
+Dataset Bias
+,BFW,DemogPairs,RFW,CelebA
+CIAGAN,"[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]"
+,BFW,,,,,,,,DemogPairs,,,,,,RFW,,,,CelebA,
+
+Dataset Bias
+,BFW,DemogPairs,RFW,CelebA
+DP1,"[0, 4, 18, 43, 86]","[0, 0, 0, 0, 7]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]"
+,BFW,,,,,,,,DemogPairs,,,,,,RFW,,,,CelebA,
+
+Dataset Bias
+,BFW,DemogPairs,RFW,CelebA
+DP-Snow,"[25, 25, 43, 46, 71]","[0, 13, 33, 47, 80]","[0, 0, 0, 33, 50]","[0, 0, 0, 0, 0]"

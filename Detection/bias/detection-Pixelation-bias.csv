@@ -1,0 +1,9 @@
+epsilons=[0.2  0.15 0.1  0.05 0.02]
+Pixelation
+,BFW,,,,,,,,DemogPairs,,,,,
+,indian_females,white_males,white_females,indian_males,black_females,asian_males,asian_females,black_males,White_Males,White_Females,Asian_Males,Black_Females,Black_Males,Asian_Females
+mtcnn,"[0, 29, 71, 71, 86]","[0, 29, 71, 71, 86]","[0, 0, 29, 71, 71]","[0, 0, 0, 29, 43]","[0, 0, 0, 29, 43]","[0, 0, 0, 0, 29]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[60, 80, 80, 80, 100]","[20, 60, 80, 80, 80]","[0, 0, 0, 20, 40]","[0, 0, 0, 0, 20]","[0, 0, 0, 0, 20]","[0, 0, 0, 0, 0]"
+
+Dataset Bias
+,BFW,DemogPairs
+mtcnn,"[0, 14, 43, 68, 89]","[27, 47, 53, 60, 87]"
