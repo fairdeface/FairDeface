@@ -1,10 +1,4 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Oct 21 20:07:fontsize 2023
 
-@author: moosavi
-"""
 import seaborn as sns
 from matplotlib.lines import Line2D
 from matplotlib.colors import BoundaryNorm, ListedColormap
@@ -356,7 +350,7 @@ def bias_measure(verification, term, ch):
    
         datasets = list(verification[models[0]].keys())
         first_row=[""]
-        second_row=[""]
+        # second_row=[""]
         row_datasets=[""]    
         row_datasets.append(['Dataset Bias'])
         row_datasets.append([""])
@@ -366,14 +360,14 @@ def bias_measure(verification, term, ch):
             demos = list(verification[models[0]][dataset].keys())
             demos = sort_demos(verification[models[0]][dataset])
             for demo in demos:
-                second_row.append(demo)
+                # second_row.append(demo)
                 first_row.append("")
 
 
 
                     
         writer_object.writerow(first_row)
-        writer_object.writerow(second_row)
+        # writer_object.writerow(second_row)
         bias_eps_demo={}
         bias_eps_dataset={}
      
@@ -385,6 +379,7 @@ def bias_measure(verification, term, ch):
             biases = {}
             bias_eps_demo[model]={}
             bias_eps_dataset[model]={}
+            sorted_demos=[""]
 
             # datasets = list(verification[model].keys())
             # num_cols= len(datasets)
@@ -399,6 +394,7 @@ def bias_measure(verification, term, ch):
 
                 demos = list(verification[model][dataset].keys())
                 demos = sort_demos(verification[model][dataset])
+                sorted_demos+=demos
                 num_demos = len(demos)
                 dataset_biass = np.empty((num_demos, num_demos))
                 Demos = []
@@ -416,12 +412,15 @@ def bias_measure(verification, term, ch):
                         bias_eps_demo[model][dataset][demo][epsilon]=0
                     for demo2 in demos:
                         try:
+                            # print(verification[model][dataset][demo2])
 
                             biases[dataset][demo][demo2] = (
-                               verification[model][dataset][demo])/(verification[model][dataset][demo2])
+                               verification[model][dataset][demo]-verification[model][dataset][demo2])
                             for epsilon in epsilons:
-                                bias_eps_demo[model][dataset][demo][epsilon]+= int(biases[dataset][demo][demo2] < (1-epsilon))
-                                bias_eps_dataset[model][dataset][epsilon]+= int(biases[dataset][demo][demo2] < (1-epsilon))
+                                # print(biases[dataset][demo][demo2])
+                                # print(epsilon)
+                                bias_eps_demo[model][dataset][demo][epsilon]+= (biases[dataset][demo][demo2] < -epsilon)
+                                bias_eps_dataset[model][dataset][epsilon]+= (biases[dataset][demo][demo2] < -epsilon)
                         except Exception as e: 
                             print(e)
                             
@@ -440,6 +439,7 @@ def bias_measure(verification, term, ch):
                     bias_dataset.append(int(np.round(100*bias_eps_dataset[model][dataset][epsilon])))
            
                 row_datasets[-1].append(bias_dataset)
+            writer_object.writerow(sorted_demos) 
             writer_object.writerow(row) 
 
         for row in row_datasets:
