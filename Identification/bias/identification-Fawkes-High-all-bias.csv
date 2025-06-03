@@ -1,0 +1,12 @@
+epsilons=[0.2  0.15 0.1  0.05 0.02]
+Fawkes-High
+,ArcFace,,,,,,
+,White_Females,Asian_Females,White_Males,Black_Females,Black_Males,Asian_Males
+DemogPairs,"[0, 0, 0, 0, 0]","[0, 0, 0, 20, 20]","[0, 0, 20, 40, 40]","[0, 0, 20, 40, 40]","[20, 20, 40, 80, 80]","[20, 40, 80, 80, 100]"
+,asian_females,asian_males,indian_females,black_males,black_females,white_females,white_males,indian_males
+BFW,"[0, 0, 0, 0, 0]","[0, 0, 14, 14, 14]","[0, 14, 14, 14, 29]","[14, 14, 14, 43, 43]","[14, 14, 29, 43, 57]","[14, 29, 43, 57, 71]","[43, 57, 71, 86, 86]","[43, 57, 71, 86, 86]"
+
+Dataset Bias
+,ArcFace
+DemogPairs,"[13, 20, 53, 87, 93]"
+BFW,"[32, 46, 64, 86, 96]"

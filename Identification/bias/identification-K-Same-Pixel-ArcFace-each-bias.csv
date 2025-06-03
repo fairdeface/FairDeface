@@ -1,0 +1,12 @@
+epsilons=[0.2  0.15 0.1  0.05 0.02]
+K-Same-Pixel-ArcFace
+,ArcFace,,,,,,
+,Asian_Females,Black_Females,Asian_Males,Black_Males,White_Males,White_Females
+DemogPairs,"[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 40]"
+,asian_females,asian_males,white_males,black_females,indian_females,white_females,black_males,indian_males
+BFW,"[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 14]","[0, 0, 0, 0, 14]","[0, 0, 0, 0, 14]","[0, 0, 0, 0, 29]","[0, 0, 0, 0, 29]","[0, 0, 0, 14, 71]"
+
+Dataset Bias
+,ArcFace
+DemogPairs,"[0, 0, 0, 0, 13]"
+BFW,"[0, 0, 0, 4, 43]"
