@@ -1,9 +1,0 @@
-epsilons=[0.2  0.15 0.1  0.05 0.02]
-Fawkes-High
-,BFW,,,,,,,,,DemogPairs,,,,,,
-,black_females,white_females,asian_females,indian_males,indian_females,black_males,asian_males,white_males,Black_Females,Black_Males,Asian_Females,White_Females,White_Males,Asian_Males
-mtcnn,"[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]"
-
-Dataset Bias
-,BFW,DemogPairs
-mtcnn,"[0, 0, 0, 0, 0]","[0, 0, 0, 0, 0]"
