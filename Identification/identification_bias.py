@@ -1,10 +1,4 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Oct 21 20:07:fontsize 2023
 
-@author: moosavi
-"""
 import seaborn as sns
 from matplotlib.lines import Line2D
 from matplotlib.colors import BoundaryNorm, ListedColormap
@@ -106,7 +100,7 @@ def bias_measure(identification, obf_method, term):
         if not isdir(directory):
             makedirs(directory)
     
-        csv_datasets=directory +"/" +  task + '-'+ obf_method+ '-bias.csv'
+        csv_datasets=directory +"/" +  task + '-'+ obf_method+ '-'+ term + '-bias.csv'
         with open(csv_datasets, 'w') as csv_f:
             writer_object = writer(csv_f)
             writer_object.writerow(['epsilons=' +str(epsilons) ])
@@ -137,10 +131,9 @@ def bias_measure(identification, obf_method, term):
 
                     
         writer_object.writerow(first_row)
-        writer_object.writerow(second_row)
+        # writer_object.writerow(second_row)
         bias_eps_demo={}
         bias_eps_dataset={}
-     
         for model in identification.keys():
             
             row_datasets.append([model])
@@ -153,6 +146,8 @@ def bias_measure(identification, obf_method, term):
             # datasets = list(identification[model].keys())
             # num_cols= len(datasets)
             # num_rows= int(np.ceil(len(datasets)/2))
+            sorted_demos=[""]
+
             for dataset in datasets:
                 
                 bias_eps_demo[model][dataset]={}
@@ -163,6 +158,7 @@ def bias_measure(identification, obf_method, term):
 
                 demos = list(identification[model][dataset].keys())
                 demos = sort_demos(identification[model][dataset], term)
+                sorted_demos+=demos
                 num_demos = len(demos)
                 dataset_biass = np.empty((num_demos, num_demos))
                 Demos = []
@@ -182,10 +178,10 @@ def bias_measure(identification, obf_method, term):
                         try:
 
                             biases[dataset][demo][demo2] = (
-                                100-identification[model][dataset][demo][term]["test"])/(100-identification[model][dataset][demo2][term]["test"])
+                                -identification[model][dataset][demo][term]["test"]+identification[model][dataset][demo2][term]["test"])/100
                             for epsilon in epsilons:
-                                bias_eps_demo[model][dataset][demo][epsilon]+= int(biases[dataset][demo][demo2] < (1-epsilon))
-                                bias_eps_dataset[model][dataset][epsilon]+= int(biases[dataset][demo][demo2] < (1-epsilon))
+                                bias_eps_demo[model][dataset][demo][epsilon]+= int(biases[dataset][demo][demo2] < -epsilon)
+                                bias_eps_dataset[model][dataset][epsilon]+= int(biases[dataset][demo][demo2] < -epsilon)
                         except Exception as e: 
                             print(e)
                             
@@ -204,7 +200,10 @@ def bias_measure(identification, obf_method, term):
                     bias_dataset.append(int(np.round(100*bias_eps_dataset[model][dataset][epsilon])))
            
                 row_datasets[-1].append(bias_dataset)
+            writer_object.writerow(sorted_demos) 
+
             writer_object.writerow(row) 
+
 
         for row in row_datasets:
             writer_object.writerow(row)
