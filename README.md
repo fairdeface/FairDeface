@@ -12,8 +12,7 @@ FairDeFace is a framework designed to evaluate face obfuscation methods with a f
 2. **Quality Analysis: Face Detection**
 3. **Privacy Analysis: Verification and Identification**
 4. **Attribute Analysis**
-5. **Quality Analysis: FID Score**
-6. **Bias Analysis from FID Success**
+5. **Quality Analysis: FID Score and Demographic Bias**
 
 ---
 
@@ -223,9 +222,13 @@ python Attribute_results.py --obfuscation_file Attribute_DP2_000181.pkl \
 
 ---
 
-## 5. Quality Analysis: FID Score
+## 5. Quality Analysis: FID Score and Demographic Bias
 
-This module evaluates image quality preservation using **Fréchet Inception Distance (FID)** between original and obfuscated faces, computed per demographic and dataset. It outputs both raw FID scores and normalized success metrics.
+This module evaluates image quality and fairness preservation using:
+
+* **Fréchet Inception Distance (FID)** between original and obfuscated images
+* **Normalized FID-based success rate**
+* **Demographic bias** based on fairness gaps across subgroups
 
 ### Calculate FID and Success Tables
 
@@ -261,16 +264,10 @@ Each file includes:
 **Notes**:
 
 * FID is computed using `torchmetrics.image.fid.FrechetInceptionDistance`.
-* CPU fallback is automatically triggered if CUDA memory is insufficient.
-* The script supports both CIAGAN and standard dataset folder structures.
+* CPU fallback is triggered if CUDA memory is insufficient.
+* The script supports both CIAGAN and standard folder structures.
 
----
-
-## 6. Bias Analysis from FID Success
-
-This module estimates fairness by computing **demographic bias** from normalized FID-based success scores.
-
-### Calculate Demographic Bias
+### Compute Demographic Bias
 
 Run the following command:
 
@@ -288,13 +285,13 @@ python fid_bias.py --fid_success FID_success/fid_success_DP1.csv
 
 Generates a CSV file named `bias/bias_<method>.csv`, containing:
 
-* **Bias percentages** per demographic and dataset
-* **ε-thresholds** (e.g., ε = 0.02, 0.05, 0.1, 0.15, 0.2) indicating fairness sensitivity
+* Bias percentages per demographic and dataset
+* Multiple ε-thresholds (e.g., ε = 0.02, 0.05, 0.1, 0.15, 0.2)
 * Mean row for each dataset
-* Global total mean row across datasets
+* Global average across datasets
 
 **Interpretation**:
-A higher percentage indicates a demographic more frequently underperforms (in normalized FID) relative to others by the given ε threshold — representing fairness violations.
+A higher percentage at a given ε means that a demographic more frequently underperforms relative to others — revealing potential fairness issues.
 
 ---
 
