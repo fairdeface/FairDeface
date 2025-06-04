@@ -1,0 +1,19 @@
+# --- BFW ---
+Dataset,black_males,asian_males,indian_females,indian_males,white_males,black_females,asian_females,white_females,MEAN
+BFW,23.55,20.12,25.11,21.68,18.35,24.09,21.02,22.96,22.11
+
+# --- DemogPairs ---
+Dataset,White_Females,Black_Females,Asian_Males,White_Males,Black_Males,Asian_Females,MEAN
+DemogPairs,13.03,12.67,11.2,9.65,11.56,12.49,11.77
+
+# --- RFW ---
+Dataset,Caucasian,African,Indian,Asian,MEAN
+RFW,3.7,5.28,5.54,5.29,4.95
+
+# --- CelebA ---
+Dataset,Females,Males,MEAN
+CelebA,5.7,2.45,4.08
+
+# --- Overall Mean ---
+Dataset,MEAN
+MEAN_ALL,13.77

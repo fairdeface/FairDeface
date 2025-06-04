@@ -1,0 +1,11 @@
+# --- BFW ---
+Dataset,black_males,asian_males,indian_females,indian_males,white_males,black_females,asian_females,white_females,MEAN
+BFW,13.16,12.84,13.85,12.41,11.88,13.5,14.16,12.08,12.98
+
+# --- DemogPairs ---
+Dataset,White_Females,Black_Females,Asian_Males,White_Males,Black_Males,Asian_Females,MEAN
+DemogPairs,9.57,13.68,18.92,7.91,14.41,21.18,14.28
+
+# --- Overall Mean ---
+Dataset,MEAN
+MEAN_ALL,13.54

@@ -1,0 +1,27 @@
+Dataset,Demographic,ε=0.02,ε=0.05,ε=0.1,ε=0.15,ε=0.2
+BFW,black_males,100,100,100,100,86
+BFW,asian_males,43,0,0,0,0
+BFW,indian_females,0,0,0,0,0
+BFW,indian_males,71,71,43,0,0
+BFW,white_males,86,71,57,43,0
+BFW,black_females,57,43,0,0,0
+BFW,asian_females,0,0,0,0,0
+BFW,white_females,0,0,0,0,0
+BFW,MEAN,89,71,50,36,21
+DemogPairs,White_Females,100,80,60,20,0
+DemogPairs,Black_Females,80,80,20,20,0
+DemogPairs,Asian_Males,20,20,0,0,0
+DemogPairs,White_Males,0,0,0,0,0
+DemogPairs,Black_Males,60,20,0,0,0
+DemogPairs,Asian_Females,20,20,0,0,0
+DemogPairs,MEAN,93,73,27,13,0
+RFW,Caucasian,0,0,0,0,0
+RFW,African,100,67,67,33,33
+RFW,Indian,67,67,33,33,33
+RFW,Asian,33,33,33,0,0
+RFW,MEAN,100,83,67,33,33
+CelebA,Females,0,0,0,0,0
+CelebA,Males,0,0,0,0,0
+CelebA,MEAN,0,0,0,0,0
+Overall Mean,MEAN,0,0,0,0,0
+Total MEAN,,56,45,29,16,11
