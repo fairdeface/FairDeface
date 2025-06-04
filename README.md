@@ -222,7 +222,7 @@ python Attribute_results.py --obfuscation_file Attribute_DP2_000181.pkl \
 
 ---
 
-## 5. Quality Analysis: FID Score and Demographic Bias
+## 5. Quality Analysis: FID Score
 
 This module evaluates image quality and fairness preservation using:
 
